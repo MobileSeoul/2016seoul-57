@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="48px"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:id="@+id/main"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_back"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/main"
+                android:layout_marginTop="6px"
+                android:layout_marginBottom="8px"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/camera"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_back"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/camera"
+                android:layout_marginTop="6px"
+                android:layout_marginBottom="6px"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/picture"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_back_gray"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/picture"
+                android:layout_marginTop="6px"
+                android:layout_marginBottom="6px"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#dddddd"
+        />
+
+
+
+</LinearLayout>
+

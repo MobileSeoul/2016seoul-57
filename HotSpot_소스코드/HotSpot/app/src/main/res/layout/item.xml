@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    android:background="#dddddd"
+    android:weightSum="10">
+
+    <!--<ImageView android:id="@+id/img_flag"
+        android:layout_width="0dp"
+        android:layout_height="114dp"
+        android:layout_weight="3"
+        android:src="@drawable/logo_incamera"
+        android:background="#ffffff"
+        android:layout_marginLeft="0dp"/>-->
+
+    <WebView android:id="@+id/img_flag"
+        android:scrollbars="none"  android:clickable="false" android:focusable="false"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="3"
+        android:background="#ffffff"></WebView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <TextView android:id="@+id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="NAME"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#3b3b3b"
+            android:gravity="center_vertical"
+            android:background="#ffffff"
+            android:padding="3dp"/>
+
+        <TextView android:id="@+id/text_nation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="NATION"
+            android:gravity="center_vertical"
+            android:layout_marginTop="2dp"
+            android:background="#ffffff"
+            android:padding="3dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
